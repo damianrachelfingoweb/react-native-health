@@ -217,6 +217,11 @@ declare module 'react-native-health' {
       callback: (err: string, results: HealthValue) => void,
     ): void
 
+    saveHeartRateSample(
+      options: HealthValueOptions,
+      callback: (error: string, result: HealthValue) => void,
+    ): void
+
     getHeartRateSamples(
       options: HealthInputOptions,
       callback: (err: string, results: Array<HealthValue>) => void,
